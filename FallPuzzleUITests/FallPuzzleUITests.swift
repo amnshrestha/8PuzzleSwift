@@ -29,6 +29,17 @@ class FallPuzzleUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let app = XCUIApplication()
+        let image8Button = app.buttons["Image8"]
+        image8Button.tap()
+        
+        let swipeRightToRestartButton = app.buttons["Swipe Right to Restart"]
+        swipeRightToRestartButton.swipeRight()
+        image8Button.tap()
+        swipeRightToRestartButton.swipeRight()
+        
     }
 
 }

@@ -85,6 +85,7 @@ class ViewController: UIViewController {
         let gameEnd = puzzleObject.ifWon()
         
         if(gameEnd){
+            congratsMessage.textColor = UIColor.yellow
             congratsMessage.isHidden = false
         }else{
             congratsMessage.isHidden = true
