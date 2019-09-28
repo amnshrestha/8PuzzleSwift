@@ -21,7 +21,7 @@ class Puzzle{
         
         self.checking = makeList(9)
         
-        self.checking = [1,2,3,4,5,6,7,9,8]
+        //self.checking = [1,2,3,4,5,6,7,9,8]
         
         for i in 0...puzzleBoxes.count-1{
             for j in 0...puzzleBoxes[0].count-1{

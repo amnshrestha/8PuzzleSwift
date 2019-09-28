@@ -25,8 +25,11 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var congratsMessage: UILabel!
+    @IBAction func swipedRight(_ sender: Any) {
+        restartFunction()
+    }
     
-    @IBAction func restartButton(_ sender: Any) {
+    @IBAction func restartFunction() {
         
         imageButton1.tag = 1
         imageButton1.setImage(UIImage(named: "Image1"), for: .normal)
